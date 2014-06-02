@@ -35,15 +35,15 @@ para pegar o array ordenado:
 
 
 == Via Arquivo de configuração:
-
+-
 	-require "sorting_service_books"
-
+-
 	-client = SortingServiceBooks::Client.new("config_one_condition.yml")
-
+-
 	-client.sort
 
 Para configurar o arquivo yml:
-
+-
 	conditions:
     	-
         	key: !ruby/symbol author
@@ -52,7 +52,7 @@ Para configurar o arquivo yml:
     	-
         	key: !ruby/symbol title
         	value: !ruby/symbol desc
-
+-
 	books:
     	-
         	title: 'Java How to Program'
