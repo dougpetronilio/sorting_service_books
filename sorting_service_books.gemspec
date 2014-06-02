@@ -5,13 +5,14 @@
 
 Gem::Specification.new do |s|
   s.name = "sorting_service_books"
-  s.version = "0.1.0"
+  s.version = "0.2.0"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Douglas Petronilio"]
   s.date = "2014-06-02"
   s.description = "Gem to sorting a collection of the books by any atributes."
   s.email = "dougpetronilio@gmail.com"
+  s.executables = ["test.rb"]
   s.extra_rdoc_files = [
     "LICENSE.txt",
     "README.rdoc"
@@ -25,7 +26,25 @@ Gem::Specification.new do |s|
     "README.rdoc",
     "Rakefile",
     "VERSION",
+    "bin/test.rb",
+    "config_one_condition.yml",
+    "config_three_conditions.yml",
+    "config_two_conditions.yml",
+    "config_without_condition.yml",
     "lib/sorting_service_books.rb",
+    "lib/sorting_service_books/book.rb",
+    "lib/sorting_service_books/client.rb",
+    "lib/sorting_service_books/load_config.rb",
+    "lib/sorting_service_books/order.rb",
+    "lib/sorting_service_books/ordering_exception.rb",
+    "lib/sorting_service_books/sort_books.rb",
+    "lib/sorting_service_books/version.rb",
+    "sorting_service_books.gemspec",
+    "spec/book_spec.rb",
+    "spec/client_spec.rb",
+    "spec/load_config_spec.rb",
+    "spec/order_spec.rb",
+    "spec/sort_books_spec.rb",
     "spec/sorting_service_books_spec.rb",
     "spec/spec_helper.rb"
   ]
@@ -39,20 +58,20 @@ Gem::Specification.new do |s|
     s.specification_version = 4
 
     if Gem::Version.new(Gem::VERSION) >= Gem::Version.new('1.2.0') then
-      s.add_development_dependency(%q<rspec>, ["~> 2.8.0"])
+      s.add_development_dependency(%q<rspec>, [">= 0"])
       s.add_development_dependency(%q<rdoc>, ["~> 3.12"])
       s.add_development_dependency(%q<bundler>, ["~> 1.0"])
       s.add_development_dependency(%q<jeweler>, ["~> 2.0.1"])
       s.add_development_dependency(%q<simplecov>, [">= 0"])
     else
-      s.add_dependency(%q<rspec>, ["~> 2.8.0"])
+      s.add_dependency(%q<rspec>, [">= 0"])
       s.add_dependency(%q<rdoc>, ["~> 3.12"])
       s.add_dependency(%q<bundler>, ["~> 1.0"])
       s.add_dependency(%q<jeweler>, ["~> 2.0.1"])
       s.add_dependency(%q<simplecov>, [">= 0"])
     end
   else
-    s.add_dependency(%q<rspec>, ["~> 2.8.0"])
+    s.add_dependency(%q<rspec>, [">= 0"])
     s.add_dependency(%q<rdoc>, ["~> 3.12"])
     s.add_dependency(%q<bundler>, ["~> 1.0"])
     s.add_dependency(%q<jeweler>, ["~> 2.0.1"])
