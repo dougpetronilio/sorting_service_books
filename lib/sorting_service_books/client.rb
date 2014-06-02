@@ -1,4 +1,5 @@
 module SortingServiceBooks
+  
   class Client
     attr_accessor :books
     
