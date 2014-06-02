@@ -1,7 +1,13 @@
 require File.expand_path(File.dirname(__FILE__) + '/spec_helper')
 
-describe "SortingServiceBooks" do
-  it "fails" do
-    fail "hey buddy, you should probably rename this file and start specing for real"
+module SortingServiceBooks
+
+  describe "SortingServiceBooks" do
+
+    it "should have a version" do
+      expect(SortingServiceBooks.const_defined?('VERSION')).to eq(true)
+    end
+
   end
+
 end
