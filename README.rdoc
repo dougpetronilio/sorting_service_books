@@ -11,9 +11,11 @@ fazer essas configurações via software. Na pasta bin temos os dois exemplos de
 
 para instalar:
 
+```ruby
 gem install sorting_service_books
 
 require "sorting_service_books"
+```
 
 para criar a biblioteca de Books via software:
 
@@ -47,6 +49,7 @@ client = SortingServiceBooks::Client.new("config_one_condition.yml")
 client.sort
 
 Para configurar o arquivo yml:
+
 conditions:
     -
         key: !ruby/symbol author
