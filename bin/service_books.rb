@@ -1,7 +1,5 @@
 #!/usr/bin/env ruby
 
-require 'bundler/setup'
-$:.unshift File.join(File.dirname(__FILE__), "..", "lib")
 require "sorting_service_books"
 
 
