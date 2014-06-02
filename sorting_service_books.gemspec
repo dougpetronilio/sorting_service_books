@@ -5,14 +5,14 @@
 
 Gem::Specification.new do |s|
   s.name = "sorting_service_books"
-  s.version = "0.2.0"
+  s.version = "0.2.1"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Douglas Petronilio"]
   s.date = "2014-06-02"
   s.description = "Gem to sorting a collection of the books by any atributes."
   s.email = "dougpetronilio@gmail.com"
-  s.executables = ["test.rb"]
+  s.executables = ["VERSION", "config_one_condition.yml", "config_three_conditions.yml", "config_two_conditions.yml", "config_without_condition.yml", "service_books.rb", "test.rb"]
   s.extra_rdoc_files = [
     "LICENSE.txt",
     "README.rdoc"
@@ -26,6 +26,11 @@ Gem::Specification.new do |s|
     "README.rdoc",
     "Rakefile",
     "VERSION",
+    "bin/config_one_condition.yml",
+    "bin/config_three_conditions.yml",
+    "bin/config_two_conditions.yml",
+    "bin/config_without_condition.yml",
+    "bin/service_books.rb",
     "bin/test.rb",
     "config_one_condition.yml",
     "config_three_conditions.yml",
