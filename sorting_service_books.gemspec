@@ -26,6 +26,7 @@ Gem::Specification.new do |s|
     "README.rdoc",
     "Rakefile",
     "VERSION",
+    "bin/VERSION",
     "bin/config_one_condition.yml",
     "bin/config_three_conditions.yml",
     "bin/config_two_conditions.yml",
