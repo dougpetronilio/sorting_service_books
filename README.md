@@ -1,13 +1,13 @@
-### sorting_service_books
+## sorting_service_books
 
 Esta gem foi desenvolvida para ordenar um array de books utilizando varias condições.
 Podemos ordenar por qualquer atributo da classe Book(title, author, edition) de forma ascendente ou descendente.
 Podemos usar arquivos yaml para configurar como será essa ordenação e carregar o array de Books ou podemos
 fazer essas configurações via software. Na pasta bin temos os dois exemplos de como fazer isso.
 
-### Como utilizar
+## Como utilizar
 
-## Via software:
+#### Via software:
 
 para instalar:
 ```ruby
@@ -41,7 +41,7 @@ para pegar o array ordenado:
 	sort_books.sort
 ```
 
-== Via Arquivo de configuração:
+#### Via Arquivo de configuração:
 
 código:
 
@@ -83,7 +83,7 @@ Para configurar o arquivo yml:
 	        edition: '2007'
 ```
 
-## Contributing to sorting_service_books
+### Contributing to sorting_service_books
  
 * Check out the latest master to make sure the feature hasn't been implemented or the bug hasn't been fixed yet.
 * Check out the issue tracker to make sure someone already hasn't requested it and/or contributed it.
@@ -93,7 +93,7 @@ Para configurar o arquivo yml:
 * Make sure to add tests for it. This is important so I don't break it in a future version unintentionally.
 * Please try not to mess with the Rakefile, version, or history. If you want to have your own version, or is otherwise necessary, that is fine, but please isolate to its own commit so I can cherry-pick around it.
 
-## Copyright
+### Copyright
 
 Copyright (c) 2014 Douglas Petronilio. See LICENSE.txt for
 further details.
