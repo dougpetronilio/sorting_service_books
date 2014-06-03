@@ -10,16 +10,17 @@ fazer essas configurações via software. Na pasta bin temos os dois exemplos de
 == Via software:
 
 para instalar:
-	> gem install sorting_service_books
-	> require "sorting_service_books"
-
+```
+	gem install sorting_service_books
+	require "sorting_service_books"
+```
 
 para criar a biblioteca de Books via software:
-	> books = []
-	> books << SortingServiceBooks::Book.new("Java How to Program", "Deitel & Deitel", "2007")
-	> books << SortingServiceBooks::Book.new("Patterns of Enterprise Application Architecture", "Martin Fowler", "2002")
-	> books << SortingServiceBooks::Book.new("Head First Design Patterns", "Elisabeth Freeman", "2004")
-	> books << SortingServiceBooks::Book.new("Internet & World Wide Web: How to Program", "Deitel & Deitel", "2007")
+	books = []
+	books << SortingServiceBooks::Book.new("Java How to Program", "Deitel & Deitel", "2007")
+	books << SortingServiceBooks::Book.new("Patterns of Enterprise Application Architecture", "Martin Fowler", "2002")
+	books << SortingServiceBooks::Book.new("Head First Design Patterns", "Elisabeth Freeman", "2004")
+	books << SortingServiceBooks::Book.new("Internet & World Wide Web: How to Program", "Deitel & Deitel", "2007")
 
 
 para criar as condições via software:
@@ -42,6 +43,7 @@ código:
 	client.sort
 
 Para configurar o arquivo yml:
+
 	conditions:
 	    -
 	        key: !ruby/symbol author
@@ -50,6 +52,7 @@ Para configurar o arquivo yml:
 	    -
 	        key: !ruby/symbol title
 	        value: !ruby/symbol desc
+
 	books:
 	    -
 	        title: 'Java How to Program'
